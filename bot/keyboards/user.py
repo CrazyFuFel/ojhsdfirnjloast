@@ -167,6 +167,13 @@ def buy_key_kb(
         builder.row(
             InlineKeyboardButton(text="💰 Использовать баланс", callback_data="pay_use_balance")
         )
+    # 🔥 НОВАЯ КНОПКА
+    builder.row(
+        InlineKeyboardButton(
+            text="💸 Карта",
+            url="https://t.me/byPYTHONOV"
+        )
+    )
 
     # Кнопка «На главную» — последний ряд
     builder.row(
@@ -612,6 +619,13 @@ def renew_payment_method_kb(
         builder.row(
             InlineKeyboardButton(text="💰 Использовать баланс", callback_data=f"pay_use_balance:{key_id}")
         )
+    # 🔥 НОВАЯ КНОПКА
+    builder.row(
+        InlineKeyboardButton(
+            text="💸 Карта",
+            url="https://t.me/byPYTHONOV"
+        )
+    )
 
     # Последний ряд: назад и на главную
     builder.row(
